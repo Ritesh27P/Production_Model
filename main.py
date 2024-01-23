@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 PORT = 3000
-# PORT = os.environ['PORT'] or 3000
+PORT = os.environ['PORT'] or 3000
 
 # Models
 sym_model = pickle.load(open('Symptom_Model1.sav', 'rb'))
